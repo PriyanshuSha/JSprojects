@@ -49,6 +49,7 @@ const loadquestion = () => {
 const submitQuiz = () => {
   const data = question[index];
   console.log("data", data);
+  // users answer
   const ans = getAnswer();
   if (ans === data.correct) {
     right++;
