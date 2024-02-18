@@ -15,6 +15,17 @@ const winPattern = [
   [3, 4, 5],
   [6, 7, 8],
 ];
+const enableBoxes = () => {
+  for (let box of boxes) {
+    box.disabled = false;
+    box.innerText = "";
+    msgContainer.classList.add("hide");
+  }
+};
+const resetgame = () => {
+  turn0 = true;
+  enableBoxes();
+};
 
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
@@ -37,8 +48,9 @@ const disableBoxes = () => {
   }
 };
 const showWinner = (winner) => {
-  console.log("Congratulations you are winner " + winner);
-  msg.innerText = `Congratulations you are winner ${winner}`;
+  console.log("Congratulations you are winner Mr./Miss." + winner);
+  msg.innerText = `Congratulations you are winner 
+                  Mr./Miss. ${winner}`;
   msgContainer.classList.remove("hide");
   disableBoxes();
 };
@@ -57,3 +69,8 @@ const checkWinner = () => {
     }
   }
 };
+
+reset.addEventListener("click", () => {
+  resetgame();
+});
+newGame.addEventListener("click", resetgame);
