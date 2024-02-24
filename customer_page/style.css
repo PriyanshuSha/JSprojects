@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+  
+}
+
+.part-1{
+    height: 70vh;
+    width: 100%;
+    color: white;
+    background-color: #231f3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#photo{
+   
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    top: 25px;
+  
+}
+.part-2{
+    height: 30vh;
+    width: 100%;
+    color: white;
+    background-color: #1f1b36;
+}
+
+.data{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    /* position: fixed; */
+    top: 150px;
+    left: 35%;
+    /* height: 40vh;
+    width: 100vh; */
+}
+.data2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    /* position: fixed; */
+    top: 150px;
+    right: 20%;
+    /* height: 40vh;
+    width: 100vh; */
+}
+
+.data li{
+    margin: 10px;  
+}
+.data2 li{
+    margin: 10px;  
+}
