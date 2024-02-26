@@ -6,57 +6,92 @@
 .container{
     height: 100vh;
     width: 100%;
-  
 }
 
-.part-1{
-    height: 70vh;
+.main-part1{
+    height: 65%;
     width: 100%;
-    color: white;
     background-color: #231f3a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
-
-#photo{
-   
-    height: 20vh;
-    width: 20vh;
-    position: absolute;
-    top: 25px;
-  
-}
-.part-2{
-    height: 30vh;
+.main-part2{
+    height: 35%;
     width: 100%;
-    color: white;
     background-color: #1f1b36;
 }
 
-.data{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    /* position: fixed; */
-    top: 150px;
-    left: 35%;
-    /* height: 40vh;
-    width: 100vh; */
-}
-.data2{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    /* position: fixed; */
-    top: 150px;
-    right: 20%;
-    /* height: 40vh;
-    width: 100vh; */
+.image{
+    height: 40%;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.data li{
-    margin: 10px;  
+.content{
+    height: 60%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+   justify-content: center;
 }
-.data2 li{
-    margin: 10px;  
+
+.actual-content{
+    margin-left: 25px;
+    height: 99%;
+    width: 50%;
+    color: white;
+    /* background-color: white; */
+    overflow: hidden; /* Prevents content from overflowing */
+    display: flex;
+    flex-direction: column;
+  
+    /* background-color: white; */
+
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+.info{
+    margin-top: 15px;
+    font-size: 20px;
+    overflow: auto;
+    /* margin-top: 15px;
+    font-size: 20px; */
+}
+
+.box{
+    height: 33%;
+    width: 100%;
+}
+
+#box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 10%;
+    background-color: blueviolet;
+}
+#box2{
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+    width: 40%;
+    color: white;
+    background-color: rgb(180, 156, 20);
+}#box3{
+    /* background-color: rgb(218, 20, 96); */
+}
+
+.border{
+    border: 1px solid #62627a;
 }
